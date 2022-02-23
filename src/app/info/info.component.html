@@ -1,0 +1,165 @@
+<div id="parentDiv">
+  <div id="initial">
+    <div class="container">
+      <h1><span class="greet">Hi, I'm</span> Vicky Gupta</h1>
+      <br /><br />
+      <h4>
+        My Career Objective is to contribute to the organization&#39;s growth by
+        a team & result oriented person.<br />To devote my skills for attaining
+        the organizational goals and maximizing personal learning.
+      </h4>
+    </div>
+  </div>
+  <div id="about">
+    <h2>About Me</h2>
+    <div class="container">
+      <hr class="aboutHR" />
+      <div class="row">
+        <div class="col-md-6 col-sm-12 imgDiv">
+          <img
+            src="../../assets/images/VGFormal.png"
+            class="img-fluid"
+            id="profileImage"
+          />
+        </div>
+        <div class="col-md-6 col-sm-12 aboutInfo">
+          <mat-card class="card">
+            <div class="card-body">
+              <p>
+                My name is <b>Vicky Gupta</b>. I'm a <b>MCA</b> student at K.J.
+                Somaiya Institute of Management. I was born and raised in
+                <b>Mumbai</b>.
+              </p>
+              <p>
+                I did <b>B.Sc. in Information Technology</b> from Ramniranjan
+                Jhunjhunwala College of Arts, Science & Commerce.
+              </p>
+              <p>
+                I like <b>Mobile Gaming</b>. While working I like to learn
+                desktop/laptop <b>keyboard shortcuts</b>.
+              </p>
+            </div></mat-card
+          >
+        </div>
+      </div>
+      <hr class="aboutHR" />
+    </div>
+  </div>
+  <div id="profession">
+    <h2>Profession</h2>
+    <div class="container">
+      <hr class="professionHR" />
+      <mat-card class="card">
+        <div class="card-body">
+          <h2 id="desig">Associate Software Engineer</h2>
+          <h3>Indus Valley Partners</h3>
+          <p>Jan 2022 - Present</p>
+        </div>
+      </mat-card>
+      <hr class="professionHR" />
+    </div>
+  </div>
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="container">
+      <hr class="projectsHR" />
+      <div class="row">
+        <div
+          class="col-xl-4 col-lg-6 col-md-6 col-sm-12"
+          *ngFor="let item of projectsList"
+        >
+          <div class="card">
+            <div class="card-body">
+              <div class="projectHeader">
+                <p class="projectName">{{ item.title }}</p>
+                <p>{{ item.year }}</p>
+              </div>
+              <p class="projectCategory">{{ item.projectType }}</p>
+              <p class="projectTech">{{ item.techs }}</p>
+              <div class="projectFooter">
+                <a href="{{ item.githubRepo }}" target="_blank"
+                  ><button mat-raised-button class="gitrep">
+                    Github Repo
+                  </button></a
+                >
+                <a href="{{ item.captures }}" target="_blank"
+                  ><button mat-stroked-button class="captureBtn">
+                    Captures
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="projectsHR" />
+    </div>
+  </div>
+  <div id="more">
+    <h2>More about me</h2>
+    <div class="container">
+      <hr class="moreHR" />
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <mat-card class="card">
+            <div class="card-body">
+              <a
+                mat-raised-button
+                href="../../assets/resume/VickyGupta-CV.pdf"
+                target="_blank"
+                ><i class="fa-solid fa-file"></i> View Resume
+              </a>
+            </div>
+          </mat-card>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <mat-card class="card">
+            <div class="card-body">
+              <a
+                href="mailto:vickygupta16599@gmail.com"
+                target="_blank"
+                mat-raised-button
+              >
+                <i class="fa-solid fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row sm">
+        <div class="col-12">
+          <mat-card class="card">
+            <div class="card-body">
+              <a
+                id="linkedin"
+                mat-raised-button
+                href="https://www.linkedin.com/in/vicky-gupta-055094193"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                id="utube"
+                mat-raised-button
+                href="https://www.youtube.com/channel/UChOYJq6uvpv--9X-c84NKmg"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                id="github"
+                mat-raised-button
+                href="https://github.com/vickygupta16"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <br />
+      <hr class="moreHR" />
+    </div>
+  </div>
+</div>

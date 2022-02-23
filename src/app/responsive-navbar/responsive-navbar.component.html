@@ -1,0 +1,35 @@
+<mat-toolbar fxLayout="row" color="primary" class="mat-elevation-z6">
+  <img src="../../assets/images/VGFormal.png" id="profileLogo" />
+  <span fxFlex>Vicky Gupta</span>
+  <a *ngFor="let item of menuItems" href="{{ item.pathToSection }}">
+    <button
+      class="navBtn"
+      mat-button
+      [fxShow]="item.showOnDesktop"
+      [fxShow.xs]="item.showOnMobile"
+      [fxShow.sm]="item.showOnTablet"
+    >
+      <i class="{{ item.icon }}"></i>
+      <span class="lbl">{{ item.label }}</span>
+    </button></a
+  >
+  <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide.gt-sm fxShow>
+    <mat-icon>more_horiz</mat-icon>
+  </button>
+  <mat-menu #dropMenu="matMenu" id="menuList">
+    <ng-container *ngFor="let item of menuItems">
+      <div
+        [fxShow]="!item.showOnDesktop"
+        [fxShow.sm]="!item.showOnTablet"
+        [fxShow.xs]="!item.showOnMobile"
+      >
+        <button mat-menu-item class="navBtn">
+          <a href="{{ item.pathToSection }}">
+            <mat-icon class="{{ item.icon }}"></mat-icon>
+            {{ item.label }}</a
+          >
+        </button>
+      </div>
+    </ng-container>
+  </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,54 @@
+.fa-solid {
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.mat-primary {
+  background-color: #00308f !important;
+}
+
+@media screen and (min-width: 992px) {
+  .navBtn {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  a {
+    color: black !important;
+    text-decoration: none;
+  }
+}
+
+#profileLogo {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+.mat-elevation-z6 {
+  box-shadow: 0 20px 18px 0 rgb(0 0 0 / 20%);
+}
+
+mat-icon {
+  text-align: center;
+}
+
+.is-active {
+  background-color: rgba(145, 158, 231, 0.15);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.lbl {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+#menuList {
+  z-index: 99;
+}
