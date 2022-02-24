@@ -13,7 +13,7 @@ export class InfoComponent implements OnInit {
       projectType: 'Web Application',
       techs: 'ASP.NET MVC, MSSQL',
       githubRepo: 'https://github.com/vickygupta16/TimeTableGenerator',
-      captures: '../../assets/captures/TimeTableGenerator-ASPDOTNET-DB_UI.pdf',
+      captures: 'assets/captures/TimeTableGenerator-ASPDOTNET-DB_UI.pdf',
     },
     {
       title: 'Meal Delivery System',
@@ -21,7 +21,7 @@ export class InfoComponent implements OnInit {
       projectType: 'Web Application',
       techs: 'ASP.NET MVC, MSSQL',
       githubRepo: 'https://github.com/vickygupta16/MealDeliverySystem',
-      captures: '../../assets/captures/MealDeliverySystem-ASPDOTNET-DB_UI.pdf',
+      captures: 'assets/captures/MealDeliverySystem-ASPDOTNET-DB_UI.pdf',
     },
     {
       title: 'Pothole Complaint System',
@@ -29,8 +29,7 @@ export class InfoComponent implements OnInit {
       projectType: 'Web Application',
       techs: 'PHP, MySQL, Laravel',
       githubRepo: 'https://github.com/vickygupta16/PotholeComplaintSystem',
-      captures:
-        '../../assets/captures/Pothole Complaint System-Laravel-DB_UI.pdf',
+      captures: 'assets/captures/Pothole Complaint System-Laravel-DB_UI.pdf',
     },
   ];
   constructor() {}
