@@ -178,6 +178,10 @@ h2 {
   margin: 0 20px;
 }
 
+.sm .card-body {
+  text-align: center;
+}
+
 #utube {
   background-color: red !important;
 }
@@ -226,6 +230,9 @@ h2 {
   #parentDiv {
     margin-bottom: 70px;
   }
+  #initial h4 {
+    padding: 0 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -234,5 +241,8 @@ h2 {
   }
   .aboutInfo {
     margin-top: 30px;
+  }
+  .sm a {
+    margin: 10px 5px;
   }
 }
